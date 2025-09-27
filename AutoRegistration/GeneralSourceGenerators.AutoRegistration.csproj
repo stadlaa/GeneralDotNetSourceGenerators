@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+		<IsRoslynComponent>true</IsRoslynComponent>
+		<IncludeBuildOutput Condition="'$(Configuration)'=='Pack'">false</IncludeBuildOutput>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="*" />
+		<PackageReference Include="PolySharp" Version="*">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\GeneralSourceGenerators.Abstractions\GeneralSourceGenerators.Abstractions.csproj" PrivateAssets="all" />
+	  <ProjectReference Include="..\Shared\GeneralSourceGenerators.Shared.csproj" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="AcrossCompilation\" />
+	</ItemGroup>
+
+</Project>
