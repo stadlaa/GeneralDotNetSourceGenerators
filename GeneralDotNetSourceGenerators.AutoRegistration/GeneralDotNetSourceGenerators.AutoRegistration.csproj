@@ -22,8 +22,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\GeneralSourceGenerators.Abstractions\GeneralDotNetSourceGenerators.Abstractions.csproj" PrivateAssets="all" />
-	  <ProjectReference Include="..\Shared\GeneralDotNetSourceGenerators.Shared.csproj" PrivateAssets="all" />
+	  <ProjectReference Include="..\GeneralDotnetSourceGenerators.Abstractions\GeneralDotNetSourceGenerators.Abstractions.csproj" PrivateAssets="all" />
+	  <ProjectReference Include="..\GeneralDotnetSourceGenerators.Shared\GeneralDotNetSourceGenerators.Shared.csproj" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>
