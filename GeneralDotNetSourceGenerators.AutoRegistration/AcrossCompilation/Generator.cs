@@ -1,20 +1,19 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using GeneralSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation;
-using GeneralSourceGenerators.Shared.Helpers;
+using GeneralDotNetSourceGenerators.Shared.Helpers;
 using Microsoft.CodeAnalysis;
 
-namespace GeneralSourceGenerators.AutoRegistration.AcrossCompilation;
+namespace GeneralDotNetSourceGenerators.AutoRegistration.AcrossCompilation;
 
 [Generator]
 public class Generator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        string registryAttributeFullName = typeof(IsRegistryAttribute).FullName!;
-        string registrantAttributeFullName = typeof(IsRegistrantToAttribute).FullName!;
-        string interfaceFullName = typeof(IRegistrant).FullName!;
+        string registryAttributeFullName = "GeneralDotNetSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation.IsRegistry";
+        string registrantAttributeFullName = "GeneralDotNetSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation.IsRegistrantToAttribute";
+        string interfaceFullName = "GeneralDotNetSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation.IRegistrant";
 
         context.RegisterSourceOutput(
             context.CompilationProvider,

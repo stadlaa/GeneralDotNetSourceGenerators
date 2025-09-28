@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 
-namespace GeneralSourceGenerators.Shared.Helpers;
+namespace GeneralDotNetSourceGenerators.Shared.Helpers;
 
 public static class HintNameHelper
 {

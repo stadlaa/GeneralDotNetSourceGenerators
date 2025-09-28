@@ -22,12 +22,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\GeneralDotnetSourceGenerators.Abstractions\GeneralDotNetSourceGenerators.Abstractions.csproj" PrivateAssets="all" />
-	  <ProjectReference Include="..\GeneralDotnetSourceGenerators.Shared\GeneralDotNetSourceGenerators.Shared.csproj" PrivateAssets="all" />
+	  <ProjectReference Include="..\GeneralDotnetSourceGenerators.Shared\GeneralDotNetSourceGenerators.Shared.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="AcrossCompilation\" />
-	</ItemGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>GeneralDotNetSourceGenerators.AutoRegistrationGenerator</Title>
+		<Authors>Jakob Stadler</Authors>
+		<Description>Is used to generate the code to complete a registry pattern. It finds all registrants and augments their registration code.</Description>
+	</PropertyGroup>
 </Project>

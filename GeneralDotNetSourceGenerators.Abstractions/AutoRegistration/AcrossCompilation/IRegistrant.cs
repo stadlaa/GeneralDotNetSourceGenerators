@@ -1,4 +1,4 @@
-﻿namespace GeneralSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation
+﻿namespace GeneralDotNetSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation
 {
 	/// <summary>
 	///   Apply this interface to a class to enable being registered.

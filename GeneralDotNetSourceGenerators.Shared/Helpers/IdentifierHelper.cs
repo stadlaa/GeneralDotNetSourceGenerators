@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading;
 
-namespace GeneralSourceGenerators.Shared.Helpers;
+namespace GeneralDotNetSourceGenerators.Shared.Helpers;
 public static class IdentifierHelper
 {
 	// C# keywords + contextual keywords

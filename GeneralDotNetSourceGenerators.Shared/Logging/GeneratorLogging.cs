@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 
-namespace SharpSunSpec.Generator.Logging;
+namespace GeneralDotNetSourceGenerators.Shared.Logging;
 
 public class GeneratorLogging
 {

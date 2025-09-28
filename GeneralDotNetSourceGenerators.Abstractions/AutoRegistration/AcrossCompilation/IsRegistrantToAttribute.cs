@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GeneralSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation
+namespace GeneralDotNetSourceGenerators.Abstractions.AutoRegistration.AcrossCompilation
 {
 	/// <summary>
 	///   Apply this attribute to a registrant class to be registered to the registry type.
