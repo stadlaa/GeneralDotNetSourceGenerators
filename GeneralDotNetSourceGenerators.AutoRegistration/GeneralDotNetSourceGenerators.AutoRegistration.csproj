@@ -28,7 +28,6 @@
 
 	<PropertyGroup>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>GeneralDotNetSourceGenerators.AutoRegistrationGenerator</Title>
 		<Authors>Jakob Stadler</Authors>
 		<Description>Is used to generate the code to complete a registry pattern. It finds all registrants and augments their registration code.</Description>
 	</PropertyGroup>
